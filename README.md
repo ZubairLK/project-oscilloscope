@@ -11,6 +11,7 @@ oscilloscope.v contains the main state machine running the scope.
 A copy has been put outside the project so that its easier to find.
 
 Other files of interest are the trigger.v
-This implements the auto trigger that is build in all scopes. The 
+
+This implements the auto trigger that is built-in on all scopes. The 
 auto trigger is what refreshes the screen data for periodic data
 at periodic intervals so that the display doesn't move around horizontally.
