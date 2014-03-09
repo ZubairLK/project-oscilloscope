@@ -1,0 +1,9 @@
+module triangle(input clk,
+					 input rst_n,
+					 output X,
+					 output Y);
+
+
+					 
+					 
+endmodule 

@@ -1,0 +1,86 @@
+module trigger(
+	input trigger_ext,		//Channel 1External Trigger
+	input trigger_ext_second,//Channel 2 Ext Trigger.
+	input trigger_sel,		 //Channel 1 Ext/Auto trigger sel
+	input trigger_sel_second,	//Channel 2 Ext/Auto trigger sel
+	
+	output trigger,				//Channel 1 trigger
+	output trigger_second,	//Channel 2 trigger
+	);
+	
+	//Trigger temporary registers for Channel 1
+reg [4:0] trigger_counter; //Counter for downsampling trigger for channel 1
+reg trigger_flag;				//Flag from trigger section to pass to state machine
+reg trigger_ext_prev;		//Trigger external temporary register storing previous state
+
+//Trigger temporary registers for Channel 2	
+reg [4:0] trigger_counter_second;	//Counter for downsampling trigger for channel 2 
+reg trigger_flag_second;					//Flag from trigger section to pass to state machine
+reg trigger_ext_prev_second;			//Trigger external temporary register storing previous state
+	
+//Trigger always. Channel 1
+always @ (posedge trigger)
+begin
+
+		if(trigger_sel == 1)	//If external trigger selected
+			begin
+			//If edge is detected in external trigger raise flag
+			if(state == END && trigger_ext^trigger_ext_prev)		
+				begin	
+					trigger_flag <= 1;							
+				end
+			else
+				begin
+					trigger_flag <= 0;
+					trigger_ext_prev <= trigger_ext;
+				end
+			end
+		else
+		begin //if auto trigger
+		//If trigger counter goes zero for downsampling the 
+		//auto trigger raise flag
+			if(state == END && trigger_counter == 0)		
+				trigger_flag <= 1;		
+			else
+				trigger_flag <= 0;			
+		end
+		
+		//Trigger counter loops always. This downsamples
+		//the auto trigger.
+		trigger_counter <= trigger_counter + 1;
+			
+end	//end trigger always channel 1
+
+
+//Trigger always. Channel 2
+always @ (posedge trigger_second)
+begin
+
+		if(trigger_sel_second == 1) //If external trigger selected
+			begin
+				//If edge is detected in external trigger raise flag
+			if(state == END && trigger_ext_second^trigger_ext_prev_second)		
+				begin
+					trigger_flag_second <= 1;							
+				end
+			else
+				begin
+					trigger_flag_second <= 0;
+					trigger_ext_prev_second <= trigger_ext_second;
+				end
+			end
+		else
+		begin//if auto trigger
+		//If trigger counter goes zero for downsampling the 
+		//auto trigger raise flag
+			if(state == END && trigger_counter_second == 0)		
+				trigger_flag_second <= 1;		
+			else
+				trigger_flag_second <= 0;			
+		end
+		
+		//Trigger counter loops always. This downsamples
+		//the auto trigger.
+		trigger_counter_second <= trigger_counter_second + 1;
+			
+end	//End trigger second channel always block.

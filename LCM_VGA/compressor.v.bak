@@ -1,0 +1,22 @@
+module compressor
+(
+	// Input Ports
+	input clk,
+	input rst_n,
+	input [12:0] in_x,
+	input signed [<msb>:<lsb>] <port_name>,
+	...
+
+	// Output Ports
+	output <port_name>,
+	output [<msb>:<lsb>] <port_name>,
+	output reg [<msb>:<lsb>] <port_name>,
+	output signed [<msb>:<lsb>] <port_name>,
+	output reg signed [<msb>:<lsb>] <port_name>,
+	
+);
+
+	// Module Item(s)
+
+endmodule
+)

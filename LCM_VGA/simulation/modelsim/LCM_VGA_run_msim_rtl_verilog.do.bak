@@ -1,0 +1,18 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA {C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA/my_pll.v}
+vlog -vlog01compat -work work +incdir+C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA {C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA/dsp.v}
+vlog -vlog01compat -work work +incdir+C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA {C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA/att.v}
+vlog -vlog01compat -work work +incdir+C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA {C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA/VGA_LCD_Driver.v}
+vlog -vlog01compat -work work +incdir+C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA {C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA/screen_buffer.v}
+vlog -vlog01compat -work work +incdir+C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA {C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA/VIDEO_PLL.v}
+vlog -vlog01compat -work work +incdir+C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA {C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA/I2S_Controller.v}
+vlog -vlog01compat -work work +incdir+C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA {C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA/line_y_x.v}
+vlog -vlog01compat -work work +incdir+C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA {C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA/line_buffer.v}
+vlog -vlog01compat -work work +incdir+C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA {C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA/i2s_lcd_config.v}
+

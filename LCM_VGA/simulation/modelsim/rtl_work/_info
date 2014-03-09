@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\el12zlk\Desktop\ZLK\Lab_5\LCM_VGA_PartA\LCM_VGA\simulation\modelsim
+vmy_pll
+!i10b 1
+!s100 LXfC_lB4D3;2R5S3;=7=j3
+I1ioS3T]SlU?J[`8^VS<[^0
+VbG]dco@BhOGa5CgN?z3O[0
+Z1 dC:\Users\el12zlk\Desktop\ZLK\Lab_5\LCM_VGA_PartA\LCM_VGA\simulation\modelsim
+w1365413575
+8C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA/my_pll.v
+FC:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA/my_pll.v
+L0 39
+OV;L;10.1b;51
+r1
+!s85 0
+31
+!s108 1365506983.748000
+!s107 C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA/my_pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA|C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA/my_pll.v|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/el12zlk/Desktop/ZLK/Lab_5/LCM_VGA_PartA/LCM_VGA -O0

@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="LCM_VGA">
+		<CBX_INST_ENTRY INSTANCE_NAME="|LCM_VGA|VGA_LCD_Driver:inst|line_buffer:LB|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_r8o1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LCM_VGA|VGA_LCD_Driver:inst|screen_buffer:SB|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_5ca2.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LCM_VGA|oscilloscope:inst7|altsyncram:ram_y2_rtl_0" CBX_FILE_NAME="altsyncram_irc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LCM_VGA|oscilloscope:inst7|altsyncram:ram_y_rtl_0" CBX_FILE_NAME="altsyncram_irc1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

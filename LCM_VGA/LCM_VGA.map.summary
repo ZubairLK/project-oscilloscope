@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Apr 28 17:30:27 2013
+Quartus II 32-bit Version : 12.1 Build 177 11/07/2012 SJ Web Edition
+Revision Name : LCM_VGA
+Top-level Entity Name : LCM_VGA
+Family : Cyclone II
+Total logic elements : 764
+    Total combinational functions : 694
+    Dedicated logic registers : 275
+Total registers : 275
+Total pins : 168
+Total virtual pins : 0
+Total memory bits : 232,960
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 2

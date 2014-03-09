@@ -1,0 +1,5 @@
+create_clock -name CLOCK_50 -period 20.000
+create_clock -name CLOCK_27 -period 37.037
+
+derive_pll_clocks
+derive_clocks
